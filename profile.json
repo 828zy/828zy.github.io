@@ -1,0 +1,190 @@
+{
+  "site_name": "mzy.github.io",
+  "name": "马子越",
+  "github_username": "abczyxabczyxa",
+  "bio": "我目前就读于西北工业大学计算机科学与技术（拔尖基地班），专业排名 1/339。我的研究方向包括多模态大模型、世界模型。",
+  "affiliation": "西北工业大学 · 计算机科学与技术",
+  "direction": "多模态大模型 · 世界模型",
+  "email": "maziyue@mail.nwpu.edu.cn",
+  "avatar": "assets/images/portrait.jpg",
+  "snapshot_date": "2026-10-25",
+  "public_repos": 8,
+  "followers": 3,
+  "projects": [
+    {
+      "name": "DUAL EXAM: CONTROLLED EVALUATION OF MULTIMODAL AGENTS AND WORLD MODELS",
+      "description": "通过两条受控评测路线，分别评估多模态智能体的决策与任务完成能力，以及世界模型的动作执行效果与状态一致性。覆盖物理、数字、社会和科学四类场景，结合执行过程分析，区分智能体、世界模型及其交互中的失败原因。",
+      "status": "技术报告 is coming soon",
+      "url": "https://xgenlabs.ai/research/dual-exam/",
+      "image": "assets/images/dual-exam.png",
+      "image_alt": "DUAL EXAM：多模态智能体与世界模型在物理、数字、社会和科学场景中的评测框架"
+    },
+    {
+      "name": "基于 LoongArch 指令集的流水线 CPU 设计",
+      "description": "基于 LoongArch 指令集设计并验证五级流水线 CPU，采用数据前递与流水线阻塞处理冒险。实现 AXI 总线接口、CSR 与中断异常处理、TLB，以及两路组相联 I-Cache / D-Cache。通过预译码优化时序，最终实现超过 1 万行 Verilog 代码，主频达 60 MHz。"
+    }
+  ],
+  "research_summary": "目前在 XGEN Labs 担任 Fundamental Research Intern，由芦肖城指导。此前于香港科技大学 PEI Lab 实习，研究 Unified Model，导师为郭嵩教授（IEEE Fellow）。",
+  "education": [
+    {
+      "period": "2023.09 — 至今",
+      "institution": "西北工业大学",
+      "detail": "计算机科学与技术（拔尖基地班）",
+      "highlights": [
+        "国家奖学金 ×3",
+        "排名 1/339"
+      ]
+    },
+    {
+      "period": "2020.09 — 2023.06",
+      "institution": "河南省实验中学",
+      "detail": "",
+      "highlights": []
+    }
+  ],
+  "internships": [
+    {
+      "period": "2026.06 — 至今",
+      "institution": "XGEN Labs",
+      "role": "Fundamental Research Intern",
+      "direction": "多模态生成、世界模型",
+      "mentor": "芦肖城",
+      "mentor_label": "Mentor",
+      "institution_url": "https://xgenlabs.ai/"
+    },
+    {
+      "period": "2025.11 — 2026.08",
+      "institution": "香港科技大学 · PEI Lab",
+      "role": "研究实习",
+      "direction": "Unified Model",
+      "mentor": "郭嵩教授（IEEE Fellow）",
+      "mentor_label": "导师",
+      "mentor_url": "https://cse.hkust.edu.hk/~songguo/"
+    }
+  ],
+  "school_links": {
+    "香港科技大学": "https://hkust.edu.hk/",
+    "西北工业大学": "https://www.nwpu.edu.cn/",
+    "河南省实验中学": "https://www.hnssyzx.cn/",
+    "南京大学智能科学与技术学院": "https://is.nju.edu.cn/"
+  },
+  "next_step": "下一站：南京大学智能科学与技术学院，我将于 2027 年 9 月入学，攻读硕士学位。",
+  "honors": {
+    "scholarships": [
+      {
+        "date": "2024.09",
+        "name": "国家奖学金",
+        "trophy": true,
+        "emphasized": true
+      },
+      {
+        "date": "2025.09",
+        "name": "国家奖学金",
+        "trophy": true,
+        "emphasized": true
+      },
+      {
+        "date": "2026.09",
+        "name": "国家奖学金",
+        "trophy": true,
+        "emphasized": true
+      },
+      {
+        "date": "2025.10",
+        "name": "燕宝奖学金",
+        "trophy": true,
+        "emphasized": false
+      },
+      {
+        "date": "2024.09",
+        "name": "西北工业大学 校级一等奖学金",
+        "trophy": false,
+        "emphasized": false
+      },
+      {
+        "date": "2025.09",
+        "name": "西北工业大学 校级一等奖学金",
+        "trophy": false,
+        "emphasized": false
+      }
+    ],
+    "competitions": [
+      {
+        "date": "2025.12",
+        "name": "全球校园人工智能算法精英大赛",
+        "award": "赛道冠军",
+        "prize": "奖金 2万元",
+        "location": "中国 南京",
+        "prize_emphasized": true
+      },
+      {
+        "date": "2025.08",
+        "name": "CICAS人工智能应用场景创新挑战赛",
+        "award": "全国二等奖",
+        "location": "中国 呼和浩特",
+        "prize": "奖金 1万元",
+        "prize_emphasized": true
+      },
+      {
+        "date": "2025.08",
+        "name": "全国大学生系统能力大赛CPU设计赛",
+        "award": "全国三等奖",
+        "location": "中国 哈尔滨"
+      },
+      {
+        "date": "2024.08",
+        "name": "中国国际大学生创新大赛",
+        "award": "陕西省金奖",
+        "location": "中国 西安"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Unifying Understanding and Generation in Vision-Language Models: Advances, Challenges, and Opportunities",
+      "year": 2026,
+      "venue": "TMLR",
+      "equal_contribution": [
+        "Xiaocheng Lu",
+        "Ziyue Ma"
+      ],
+      "authors": [
+        "Xiaocheng Lu",
+        "Ziyue Ma",
+        "Jie Zhang",
+        "Jian Liu",
+        "Song Guo"
+      ],
+      "url": "https://openreview.net/pdf?id=AIMmeOrVFL",
+      "links": [
+        {
+          "label": "论文",
+          "url": "https://openreview.net/pdf?id=AIMmeOrVFL"
+        }
+      ]
+    },
+    {
+      "title": "PACE-dLLM: Elastic Block Decoding via Confidence Cliff Estimation for Diffusion Language Models",
+      "year": 2026,
+      "venue": "NeurIPS",
+      "authors": [
+        "Xiaocheng Lu",
+        "Shuhan Guo",
+        "Ziyue Ma",
+        "Jie Zhang",
+        "Jian Liu",
+        "Jingcai Guo",
+        "Haoxuan Che",
+        "Song Guo"
+      ],
+      "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/149141",
+      "links": [
+        {
+          "label": "会议页面",
+          "url": "https://neurips.cc/virtual/2026/loc/sydney/poster/149141"
+        }
+      ]
+    }
+  ],
+  "publication_author_name": "Ziyue Ma"
+}
