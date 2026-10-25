@@ -1,10 +1,12 @@
 """Regenerate the static homepage from profile.json; no dependencies required."""
 import json
+import hashlib
 import re
 from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+STYLE_VERSION = hashlib.sha256((ROOT / 'assets/css/site.css').read_bytes()).hexdigest()[:12]
 base_profile = json.loads((ROOT / 'profile.json').read_text())
 def build(p, language, output):
     e = lambda value: escape(str(value), quote=True)
@@ -86,7 +88,7 @@ def build(p, language, output):
     <html lang="{t("zh-CN", "en")}" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{e(p['site_name'])} — {e(p['name'])}</title><meta name="description" content="{e(p['bio'])}">
     <meta name="color-scheme" content="light dark"><link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/css/template.css"><link rel="stylesheet" href="assets/css/template-additions.css"><link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/template.css"><link rel="stylesheet" href="assets/css/template-additions.css"><link rel="stylesheet" href="assets/css/site.css?v={STYLE_VERSION}">
     <script>try{{const t=localStorage.getItem('mzy-theme-v2');if(['light','yellow','blue','dark'].includes(t)){{if(t==='light')delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=t;}}}}catch(e){{}}</script>
     <script src="assets/js/site.js" defer></script></head>
     <body><a class="skip-link" href="#about">{t('跳到正文', 'Skip to content')}</a>
