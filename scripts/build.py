@@ -29,7 +29,6 @@ def build(p, language, output):
         pattern = '(' + '|'.join(re.escape(label) for label in sorted(references, key=len, reverse=True)) + ')'
         return ''.join(linked_label(part, references.get(part)) for part in re.split(pattern, str(text)))
 
-    github = 'https://github.com/' + p['github_username']
     sections = [('about', 'About Me'), ('experience', 'Experience'), ('honors', 'Honors'), ('publications', 'Publications'), ('projects', 'Projects')]
     nav = ''.join(f'<li><a class="site-nav__link" href="#{key}">{label}</a></li>' for key, label in sections)
     cards = ''
@@ -41,6 +40,7 @@ def build(p, language, output):
         image_class = ' research-project-with-image' if image else ''
         cards += f'<article class="research-project{image_class}">{image}<div class="research-project-content"><h3>{title}</h3><p>{e(item["description"])}</p>{status}{link}</div></article>'
     email = f'<a class="email-link" href="mailto:{e(p["email"])}" aria-label="{t("发送邮件至", "Email")} {e(p["email"])}">{e(p["email"])}</a>' if p['email'] else ''
+    phone = f'<a class="phone-link" href="tel:{e(p["phone"])}">{t("电话：", "Phone: ")}{e(p["phone"])}</a>' if p.get('phone') else ''
     education = ''
     for item in p.get('education', []):
         highlights = ''.join(f'<span>{e(value)}</span>' for value in item['highlights'])
@@ -97,7 +97,7 @@ def build(p, language, output):
     <div class="author__avatar"><div class="portrait-frame"><img src="{e(p['avatar'])}" alt="{e(p['name'])}{t('的头像', '’s portrait')}" width="1024" height="1536"><span class="portrait-tag">HELLO, WORLD.</span></div></div>
     <div class="author__content"><h1 class="author__name">{e(p['name'])}</h1></div>
     <p class="author__direction">{linked_text(p['affiliation'])}<br>{e(p['direction'])}</p>
-    <div class="author__social-icons"><a class="github-link" href="{e(github)}" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.69-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub <span>↗</span></a>{email}</div>
+    <div class="author__social-icons">{email}{phone}</div>
     <div class="profile-note"><span class="status-dot"></span> A little work in progress</div>
     <div class="appearance-controls"><fieldset class="theme-picker"><legend>APPEARANCE</legend><button type="button" data-theme-choice="light" aria-label="{t('白色主题', 'Light theme')}" aria-pressed="true"></button><button type="button" data-theme-choice="yellow" aria-label="{t('暖色主题', 'Warm theme')}" aria-pressed="false"></button><button type="button" data-theme-choice="blue" aria-label="{t('蓝色主题', 'Blue theme')}" aria-pressed="false"></button><button type="button" data-theme-choice="dark" aria-label="{t('深色主题', 'Dark theme')}" aria-pressed="false"></button></fieldset><a class="language-toggle" href="{'index.html' if language == 'zh' else 'zh.html'}" lang="{'en' if language == 'zh' else 'zh-CN'}" aria-label="{t('Switch to English', '切换为中文')}">{t('EN', '中文')}</a></div>
     </div></aside>

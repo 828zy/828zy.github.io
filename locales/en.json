@@ -73,18 +73,6 @@
         "name": "Yanbao Scholarship",
         "trophy": true,
         "emphasized": false
-      },
-      {
-        "date": "2024.09",
-        "name": "First-class University Scholarship, Northwestern Polytechnical University",
-        "trophy": false,
-        "emphasized": false
-      },
-      {
-        "date": "2025.09",
-        "name": "First-class University Scholarship, Northwestern Polytechnical University",
-        "trophy": false,
-        "emphasized": false
       }
     ],
     "competitions": [
@@ -124,7 +112,6 @@
     {
       "name": "DUAL EXAM: CONTROLLED EVALUATION OF MULTIMODAL AGENTS AND WORLD MODELS",
       "description": "Dual Exam uses two controlled evaluation tracks to assess multimodal agents’ decision-making and task completion, and world models’ action effects and state consistency. Spanning physical, digital, social, and scientific domains, it analyzes execution evidence to distinguish failures in agents, world models, and their interaction.",
-      "status": "Technical report is coming soon",
       "url": "https://xgenlabs.ai/research/dual-exam/",
       "image": "assets/images/dual-exam.png",
       "image_alt": "DUAL EXAM evaluation framework for multimodal agents and world models across physical, digital, social, and scientific domains"
