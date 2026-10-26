@@ -36,9 +36,10 @@ def build(p, language, output):
         title = linked_label(item['name'], item.get('url'))
         status = f'<p class="project-status">{e(item["status"])}</p>' if item.get('status') else ''
         link = f'<a class="project-page-link" href="{e(item["url"])}" target="_blank" rel="noopener noreferrer">{t("项目主页", "Project page")} ↗</a>' if item.get('url') else ''
+        report = f'<a class="project-page-link" href="{e(item["report_url"])}" target="_blank" rel="noopener noreferrer">{t("技术报告", "Technical report")} ↗</a>' if item.get('report_url') else ''
         image = f'<div class="research-project-image"><img src="{e(item["image"])}" alt="{e(item.get("image_alt", item["name"]))}" width="1600" height="780" loading="lazy"></div>' if item.get('image') else ''
         image_class = ' research-project-with-image' if image else ''
-        cards += f'<article class="research-project{image_class}">{image}<div class="research-project-content"><h3>{title}</h3><p>{e(item["description"])}</p>{status}{link}</div></article>'
+        cards += f'<article class="research-project{image_class}">{image}<div class="research-project-content"><h3>{title}</h3><p>{e(item["description"])}</p>{status}<div class="publication-links">{link}{report}</div></div></article>'
     email = f'<a class="email-link" href="mailto:{e(p["email"])}" aria-label="{t("发送邮件至", "Email")} {e(p["email"])}">{e(p["email"])}</a>' if p['email'] else ''
     phone = f'<a class="phone-link" href="tel:{e(p["phone"])}">{t("电话：", "Phone: ")}{e(p["phone"])}</a>' if p.get('phone') else ''
     education = ''

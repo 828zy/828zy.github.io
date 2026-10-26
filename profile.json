@@ -16,7 +16,8 @@
       "description": "通过两条受控评测路线，分别评估多模态智能体的决策与任务完成能力，以及世界模型的动作执行效果与状态一致性。覆盖物理、数字、社会和科学四类场景，结合执行过程分析，区分智能体、世界模型及其交互中的失败原因。",
       "url": "https://xgenlabs.ai/research/dual-exam/",
       "image": "assets/images/dual-exam.png",
-      "image_alt": "DUAL EXAM：多模态智能体与世界模型在物理、数字、社会和科学场景中的评测框架"
+      "image_alt": "DUAL EXAM：多模态智能体与世界模型在物理、数字、社会和科学场景中的评测框架",
+      "report_url": "https://arxiv.org/abs/2610.31066"
     },
     {
       "name": "基于 LoongArch 指令集的流水线 CPU 设计",
