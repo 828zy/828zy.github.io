@@ -4,9 +4,9 @@ Bilingual academic homepage for Ziyue Ma (马子越), with English as the defaul
 
 ## GitHub Pages
 
-Repository: `abczyxabczyxa/abczyxabczyxa.github.io`
+Repository: `828zy/828zy.github.io`
 
-Website: https://abczyxabczyxa.github.io/
+Website: https://828zy.github.io/
 
 The visible site name is `mzy.github.io`; the GitHub Pages address follows the account name.
 
